@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  line-height: 1.4rem;
+}
+
+p , h1 , h3 , h4 {
+    padding: 10px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+h1 + h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+button {
+    margin-left: 10px;
+    border: none;
+    color: white;
+    font-family:inherit ;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 6px;
+    padding: 10px 80px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 30%;
+}
+
+.main {
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding-bottom: 2px;
+  /* max-height: 10vh; */
+}
+
+.main > p {
+    max-width: 80%;
+}
+
+.pricing {
+  background-color: hsl(179, 90%, 32%);
+}
+
+.about-us {
+  background-color: hsl(179, 68%, 53%);
+}
+
+.about-us , .pricing {
+    color: white;
+}
+
+.main > p {
+    color: hsl(218, 22%, 67%);
+}
+
+.about-us > p {
+    font-size: 14px;
+}
+
+.main , .pricing , .about-us {
+    padding: 20px;
+}
+
+.about-us * {
+    width: 80%;
+}
+
+.amount {
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 0;
+    font-weight: 700;
+}
+
+.amount-per-month {
+    display: inline-block;
+    margin-bottom: 0px;
+    color: hsl(204, 43%, 93% , 0.7);
+}
+
+.gray {
+    color: hsl(204, 43%, 93%);
+    padding-top: 0;
+}
+
+.pricing-para {
+    padding-top: 0;
+    /* margin-top: 0; */
+}
